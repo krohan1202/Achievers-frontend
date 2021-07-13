@@ -1,6 +1,6 @@
-import React, {useState} from 'react'
-import {Link} from 'react-router-dom'
-import axios from 'axios'
+import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
+import axios from 'axios';
 
 function Login() {
     const [user, setUser] = useState({
@@ -16,7 +16,7 @@ function Login() {
     const loginSubmit = async e =>{
         e.preventDefault()
         try {
-            await axios.post('/user/login', {...user})
+            await axios.post('https://achievers-backend.herokuapp.com/user/login', {...user})
 
             localStorage.setItem('firstLogin', true)
             localStorage.setItem('email', {...user}.email)

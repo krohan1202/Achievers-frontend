@@ -26,7 +26,7 @@ function Cart() {
     },[cart])
 
     const addToCart = async (cart) =>{
-        await axios.patch('/user/addcart', {cart}, {
+        await axios.patch('https://achievers-backend.herokuapp.com/user/addcart', {cart}, {
             headers: {Authorization: token}
         })
     }
@@ -94,7 +94,7 @@ function Cart() {
             }
             // console.log(cart);
 
-            const data = fetch('http://localhost:5000/razorpay', { method: 'POST' }).then((t) => {
+            const data = fetch('https://achievers-backend.herokuapp.com/razorpay', { method: 'POST' }).then((t) => {
                 t.json();
             })
             
@@ -109,10 +109,9 @@ function Cart() {
                 order_id: data.id,
                 name: 'Achievers Pay',
                 description: 'Make your payment',
-                // image: 'http://localhost:1337/logo.svg',
                 handler: function (response) {
                     const razPayId = response.razorpay_payment_id;
-                    axios.post(`/api/razorpay_payment`, {email:email, cart: cart, razPayId: razPayId})
+                    axios.post(`https://achievers-backend.herokuapp.com/api/razorpay_payment`, {email:email, cart: cart, razPayId: razPayId})
                     window.location.href = "/success"
                     setCart([])
                     addToCart([])
