@@ -29,28 +29,28 @@ function Pages() {
     return (
         <Switch>
             <Route path="/" exact component={Products} />
-            <Route path="https://godspeed1234.netlify.app/our_courses" exact component={OurCourses} />
-            <Route path="https://godspeed1234.netlify.app/detail/:id" exact component={DetailProduct} />
+            <Route path="/our_courses" exact component={OurCourses} />
+            <Route path="/detail/:id" exact component={DetailProduct} />
 
-            <Route path="https://godspeed1234.netlify.app/login" exact component={isLogged ? NotFound : Login} />
-            <Route path="https://godspeed1234.netlify.app/register" exact component={isLogged ? NotFound : Register} />
+            <Route path="/login" exact component={isLogged ? NotFound : Login} />
+            <Route path="/register" exact component={isLogged ? NotFound : Register} />
 
-            <Route path="https://godspeed1234.netlify.app/category" exact component={isAdmin ? Categories : NotFound} />
-            <Route path="https://godspeed1234.netlify.app/create_product" exact component={isAdmin ? CreateProduct : NotFound} />
-            <Route path="https://godspeed1234.netlify.app/edit_product/:id" exact component={isAdmin ? CreateProduct : NotFound} />
+            <Route path="/category" exact component={isAdmin ? Categories : NotFound} />
+            <Route path="/create_product" exact component={isAdmin ? CreateProduct : NotFound} />
+            <Route path="/edit_product/:id" exact component={isAdmin ? CreateProduct : NotFound} />
 
-            <Route path="https://godspeed1234.netlify.app/history" exact component={isLogged ? OrderHistory : NotFound} />
-            <Route path="https://godspeed1234.netlify.app/history/:id" exact component={isLogged ? OrderDetails : NotFound} />
+            <Route path="/history" exact component={isLogged ? OrderHistory : NotFound} />
+            <Route path="/history/:id" exact component={isLogged ? OrderDetails : NotFound} />
 
-            <Route path="https://godspeed1234.netlify.app/cart" exact component={Cart} />
-            <Route path="https://godspeed1234.netlify.app/success" exact component={isLogged ? PaySuccess : NotFound} />
+            <Route path="/cart" exact component={Cart} />
+            <Route path="/success" exact component={isLogged ? PaySuccess : NotFound} />
 
-            <Route path="https://godspeed1234.netlify.app/careers" exact component={Careers} />
-            <Route path="https://godspeed1234.netlify.app/about" exact component={About} />
+            <Route path="/careers" exact component={Careers} />
+            <Route path="/about" exact component={About} />
 
-            <Route path="https://godspeed1234.netlify.app/refund-policy" exact component={ReturnPolicy} />
-            <Route path="https://godspeed1234.netlify.app/terms-of-use" exact component={Terms} />
-            <Route path="https://godspeed1234.netlify.app/security&privacy" exact component={Privacy} />
+            <Route path="/refund-policy" exact component={ReturnPolicy} />
+            <Route path="/terms-of-use" exact component={Terms} />
+            <Route path="/security&privacy" exact component={Privacy} />
             
             <Route path="*" exact component={NotFound} />
         </Switch>
