@@ -148,3 +148,171 @@
   font-family: "Segoe UI", sans-serif;
   font-weight: 700;
 }
+.menu-wrap {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* Hamburger */
+  .menu-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: inline;
+  }
+  .toggler {
+    position: absolute;
+    top: 4.5vw;
+    left: 3vw;
+    z-index: 11;
+    cursor: pointer;
+    width: 12.9vw;
+    height: 12.9vw;
+    opacity: 0;
+  }
+
+  .hamburger {
+    position: absolute;
+    top: 7.3vw;
+    left: 5vw;
+    z-index: 10;
+    width: 5.9vw;
+    height: 8.1vw;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Hamburger Line */
+  .line,
+  .line2,
+  .line3 {
+    position: relative;
+    flex: none;
+    width: 115%;
+    height: 3px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+    margin-left: 4vw;
+  }
+  .line {
+    position: absolute;
+    margin-top: -4.3vw;
+  }
+  .line2,
+  .line3 {
+    content: "";
+    position: absolute;
+    margin-top: 0vw;
+  }
+  .line3 {
+    margin-top: 4.3vw;
+  }
+  /* Toggler Animation */
+  .toggler:checked + .hamburger > .line {
+    position: inherit;
+    background: #fff;
+    width: 105%;
+    top: 8.25vw;
+    margin-left: 0vw;
+    height: 2px;
+    transform: rotate(135deg);
+  }
+  .toggler:checked + .hamburger > .line2 {
+    background: #fff;
+    top: 3.4vw;
+    width: 105%;
+    margin-right: 3.8vw;
+    height: 2px;
+    transform: rotate(225deg);
+  }
+  .toggler:checked + .hamburger > .line3 {
+    opacity: 0;
+  }
+  .toggler:checked + .hamburger {
+    background: transparent;
+  }
+  .toggler:checked ~ .menu {
+    visibility: visible;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    transition: all 0.8s ease;
+  }
+  .toggler:checked ~ .menu > div {
+    border-radius: 0%;
+    transform: scale(1);
+    transition-duration: 0.7s;
+  }
+  .menu {
+    top: 0;
+    left: 0;
+    height: 17vw;
+    width: 60vw;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s ease;
+  }
+  .menu > div {
+    background: rgba(0, 172, 133, 0.985);
+    border-radius: 50%;
+    width: 100vh;
+    height: 100vh;
+    transform: scale(0);
+    transition: all 0.4s ease;
+    opacity: 0;
+  }
+  .menu > div > ul {
+    margin: 0;
+    top: 15vh;
+    position: absolute;
+    left: 0;
+  }
+  /* Hamburger ends */
+
+  .smallNav {
+    display: none;
+  }
+  .navbar {
+    height: 40vw;
+  }
+  .logo {
+    width: 40.5vw;
+    left: 18.8vw;
+    top: 4.7vw;
+  }
+  .nav__contact,
+  .nav__contact--email,
+  .nav__cart,
+  .nav__login {
+    display: none;
+  }
+  .cart-icon {
+    position: absolute;
+    top: 7.9vw;
+    left: 66.5vw;
+    width: 35px;
+  }
+  .cart-icon span {
+    top: 3vw;
+    left: 0vw;
+    padding: 0.26vw 1.29vw;
+    font-size: 3vw;
+  }
+  .cart-icon svg {
+    width: 7.8vw;
+  }
+  .nav__loginIcon {
+    top: 7.3vw;
+    left: 85vw;
+    width: 7.8vw;
+  }
+}
