@@ -12,11 +12,13 @@ function Header() {
     const [isLogged] = state.userAPI.isLogged
     const [isAdmin] = state.userAPI.isAdmin
     const [cart] = state.userAPI.cart
-
+    // console.log(state.userAPI.isLogged);
     const logoutUser = async () =>{
         await axios.get('https://achievers-backend.herokuapp.com/user/logout')
         
         localStorage.removeItem('firstLogin')
+        localStorage.removeItem('accesstoken')
+        localStorage.removeItem('email')
         
         window.location.href = "/";
     }

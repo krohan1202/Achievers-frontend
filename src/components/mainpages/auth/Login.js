@@ -17,7 +17,11 @@ function Login() {
         e.preventDefault()
         try {
             await axios.post('https://achievers-backend.herokuapp.com/user/login', {...user})
-
+            .then((req, res) => {
+                console.log(res);
+                console.log(req);
+                localStorage.setItem('accesstoken',req.data.accesstoken);
+            })
             localStorage.setItem('firstLogin', true)
             localStorage.setItem('email', {...user}.email)
             window.location.href = "/";
@@ -25,7 +29,6 @@ function Login() {
             alert(err.response.data.msg)
         }
     }
-
 
     return (
         <div className="login-page">
