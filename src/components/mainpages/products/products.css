@@ -1169,6 +1169,31 @@
 /* <--------------------------------Responsive------------------------------------> */
 
 @media (max-width: 768px) {
+  /* React Elastic Carousel Slider css */
+  .rec.rec-arrow {
+    border-radius: 0;
+    font-size: 6vw;
+    margin: 0 0.1vw;
+    padding: 0;
+    height: 10vw;
+    width: 5vw;
+    background-color: #fff;
+    display: none;
+  }
+  .rec.rec-arrow:hover {
+    border-radius: 50%;
+  }
+  .bSWeAW:hover {
+    background-color: red;
+  }
+  .bSWeAW {
+    font-size: 2vw;
+    background-color: red;
+  }
+  .ach__studyMat--productsCarousel {
+    position: relative;
+  }
+  /* Hero Pic */
   .hero__vid {
     width: 140vw;
   }
@@ -1257,7 +1282,7 @@
     height: 8.9vw;
     border-radius: 4.82vw;
     position: relative;
-    top: 214.8vw;
+    top: 215.8vw;
     left: 61.2vw;
     display: flex;
     justify-content: center;
@@ -1266,7 +1291,7 @@
   .ach__studyMat--innovativeStudyMat {
     position: relative;
     left: 5.8vw;
-    top: 204.5vw;
+    top: 206vw;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 4.15vw;
@@ -1277,11 +1302,10 @@
   .ach__stdyMat--carefully {
     position: relative;
     left: 5.8vw;
-    top: 206.6vw;
+    top: 208.6vw;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 2.51vw;
-    /* margin-bottom: 15vw; */
   }
   .ach__studyMat--starredTexts {
     display: none;
@@ -1289,25 +1313,25 @@
   .ach__studyMat--starredTexts--mobile {
     display: inline-block;
     position: absolute;
-    width: 65vw;
+    width: 66vw;
     left: 5vw;
-    margin-top: 219vw;
+    margin-top: 222vw;
   }
   .ach__studyMat--products {
     position: relative;
-    top: 141vw;
+    top: 254.5vw;
     left: 49%;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 15px;
+    margin: 0 5vw 0 0.8vw;
     font-size: 4em;
     width: 91.8%;
   }
   .ach__allIndiaPart {
     position: relative;
-    margin-top: 73vw;
+    margin-top: 303vw;
     display: flex;
     justify-content: center;
   }

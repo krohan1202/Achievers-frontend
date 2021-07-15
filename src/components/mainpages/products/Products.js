@@ -16,9 +16,9 @@ import WhyAchStarredTexts from "../../../assets/Pics/Home/6-Why Achievers/Starre
 import TopperMoreInfo from "../../../assets/Pics/Home/7-Topper Fav/Topper & More info.png";
 
 const breakPoints = [
-    { width: 1, itemsToShow: 3 },
-    { width: 550, itemsToShow: 4 },
-    { width: 768, itemsToShow: 5 },
+    { width: 1, itemsToShow: 2 },
+    { width: 550, itemsToShow: 2 },
+    { width: 768, itemsToShow: 3 },
     { width: 1200, itemsToShow: 6 },
   ];
   const breakPointsYoutubeVids = [

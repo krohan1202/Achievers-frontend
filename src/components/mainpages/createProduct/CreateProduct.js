@@ -110,7 +110,7 @@ function CreateProduct() {
     e.preventDefault();
     try {
       if (!isAdmin) return alert("You're not an admin");
-      if (!images) return alert("No Image Upload");
+      if (!images) return alert("No Image Uploaded");
 
       if (onEdit) {
         await axios.put(
