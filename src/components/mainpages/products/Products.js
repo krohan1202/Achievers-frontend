@@ -10,6 +10,7 @@ import Footer from "../../footers/footer";
 //Assets
 import HeroVid from "../../../assets/Pics/Home/2-Hero/Video Part.png";
 import StudyMatStarredTexts from "../../../assets/Pics/Home/3-Study Materials/Starred Texts.png";
+import StudyMatStarredTextsMobile from "../../../assets/Pics/Home/3-Study Materials/Starred Texts--mobile.png";
 import PopularEntranceCoursesVid from "../../../assets/Pics/Home/5-Popular Entrance Courses/Video Part.png";
 import WhyAchStarredTexts from "../../../assets/Pics/Home/6-Why Achievers/Starred Texts.png";
 import TopperMoreInfo from "../../../assets/Pics/Home/7-Topper Fav/Topper & More info.png";
@@ -160,6 +161,7 @@ function Products() {
                 <span className="ach__studyMat--innovativeStudyMat">Innovative</span>
                 <span className="ach__studyMat--innovativeStudyMat ach__studyMat--studyMat"> Study Materials</span>
                 <img className="ach__studyMat--starredTexts" src={StudyMatStarredTexts} alt="Benefits" />
+                <img className="ach__studyMat--starredTexts--mobile" src={StudyMatStarredTextsMobile} alt="Benefits" />
             </span>
             <p className="ach__stdyMat--carefully">Carefully prepared by the experts at Achievers</p>
 
