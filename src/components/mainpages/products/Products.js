@@ -13,6 +13,7 @@ import StudyMatStarredTexts from "../../../assets/Pics/Home/3-Study Materials/St
 import StudyMatStarredTextsMobile from "../../../assets/Pics/Home/3-Study Materials/Starred Texts--mobile.png";
 import PopularEntranceCoursesVid from "../../../assets/Pics/Home/5-Popular Entrance Courses/Video Part.png";
 import WhyAchStarredTexts from "../../../assets/Pics/Home/6-Why Achievers/Starred Texts.png";
+import WhyAchStarredTextsMobile from "../../../assets/Pics/Home/6-Why Achievers/Starred Texts--mobile.png";
 import TopperMoreInfo from "../../../assets/Pics/Home/7-Topper Fav/Topper & More info.png";
 
 const breakPoints = [
@@ -344,6 +345,7 @@ function Products() {
             <h1 className="ach__whyAch--heading">WHY ACHIEVERS?</h1>
             <hr className="ach__whyAch--underline"></hr>
             <img className="ach__whyAch--starredTexts" src={WhyAchStarredTexts} alt="Benefits" />
+            <img className="ach__whyAch--starredTexts--mobile" src={WhyAchStarredTextsMobile} alt="Benefits" />
         </span>
 
         {/* General Enquiry */}
