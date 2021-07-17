@@ -132,30 +132,19 @@ function Header() {
                     </div>
                     <div className="menu">
                         <div>
-                        <p className="menu__Heading">Hydro Fresh Box</p>
+                            <img className="ham__logo" src={Logo} alt="Logo" />
                             <ul>
-                                <li className="hamlinks"><a className="hamburger__navlinks__shop" href="/shop">Shop</a></li>
-                                <li className="hamlinks"><a className="hamburger__navlinks__about" href="/about">About</a></li>
-                                <li className="hamlinks"><a className="hamburger__navlinks__pods" href="/pods">Pods</a></li>
-                                <li className="hamlinks"><a className="hamburger__navlinks__news" href="/news">News</a></li>
-                                <li className="hamlinks"><a className="hamburger__navlinks__contact" href="/contact">Contact</a></li>
+                                <li className="hamlinks"><a className="hamburger__navlinks__shop" href="/">Home</a></li>
+                                <li className="hamlinks"><a className="hamburger__navlinks__about" href="/about">About Us</a></li>
+                                <li className="hamlinks"><a className="hamburger__navlinks__pods" href="/our_courses">Our Courses</a></li>
+                                <li className="hamlinks"><a className="hamburger__navlinks__news" href="https://achieverscircle.ml/results">Result</a></li>
+                                <li className="hamlinks"><a className="hamburger__navlinks__contact" href="https://achieverscircle.ml/testimonial">Testimonials</a></li>
+                                <li className="hamlinks"><a className="hamburger__navlinks__contact" href="/">General Info</a></li>
+                                <li className="hamlinks"><a className="hamburger__navlinks__contact" href="/careers">Careers</a></li>
+                                <li className="hamlinks"><a className="hamburger__navlinks__contact" href="/about#ach__about__contactUs">Contact Us</a></li>
+                                <li className="hamlinks"><a className="hamburger__navlinks__contact" href="/">LIVE Enquiry Desk</a></li>
                             </ul>
-                            <a href="#" className="menu__termsAndConditions">Terms & Conditions</a>
                         </div>
-                        <span className="menu__NeedHelpPart">
-                            <ul>
-                                <li className="menu__NeedHelpPart--links"><a href="#" className="menu__NeedHelpPart--customerService">Customer Service</a></li>
-                                <li className="menu__NeedHelpPart--links"><a href="#" className="menu__NeedHelpPart--locations">Locations</a></li>
-                                <li className="menu__NeedHelpPart--links"><a href="#" className="menu__NeedHelpPart--news">News</a></li>
-                            </ul>
-                        </span>
-                        <span className="menu__FollowUsPart">
-                            <ul>
-                            <li className="menu__FollowUsPart--Heading">Follow us</li>
-                            <li className="menu__FollowUsPart--links"><a href="#" className="menu__FollowUsPart--insta">Instagram</a></li>
-                                <li className="menu__FollowUsPart--links"><a href="#" className="menu__FollowUsPart--fb">Facebook</a></li>
-                            </ul>
-                        </span>
                     </div>
                 </div>
         </>

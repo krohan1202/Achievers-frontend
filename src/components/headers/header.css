@@ -227,8 +227,8 @@
   .toggler:checked + .hamburger > .line {
     position: inherit;
     background: #fff;
-    width: 105%;
-    top: 8.25vw;
+    width: 8.5%;
+    top: 15.5vw;
     margin-left: 0vw;
     height: 2px;
     transform: rotate(135deg);
@@ -246,6 +246,7 @@
   }
   .toggler:checked + .hamburger {
     background: transparent;
+    position: fixed;
   }
   .toggler:checked ~ .menu {
     visibility: visible;
@@ -272,22 +273,60 @@
     transition: all 0.8s ease;
   }
   .menu > div {
-    background: rgba(0, 172, 133, 0.985);
+    position: fixed;
+    background: #0b1d3e;
     border-radius: 50%;
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
     transform: scale(0);
     transition: all 0.4s ease;
-    /* opacity: 0; */
   }
   .menu > div > ul {
     margin: 0;
-    top: 15vh;
+    top: 12vh;
     position: absolute;
+    left: 11vw;
+  }
+  .hamlinks {
+    margin: 2.7vh 0;
+  }
+  .hamburger__navlinks__shop,
+  .hamburger__navlinks__about,
+  .hamburger__navlinks__pods,
+  .hamburger__navlinks__news,
+  .hamburger__navlinks__contact {
+    color: #fff8ef;
+    text-align: center;
+    transition: color 0.4s ease;
+    font-size: 3.6vh;
+    font-family: "Montserrat", serif;
+  }
+  .ham__logo {
+    position: relative;
+    width: 70vw;
+    top: 84vh;
+    left: 8vw;
+  }
+  .ham__helpLine--p {
+    width: 85vw;
+    line-height: 5.3vw;
+  }
+  .ham__helpLine {
+    position: relative;
+    top: 75.4vh;
+    left: 8.5vw;
+    margin: 0;
+    color: #8fd0ff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.51vw;
+    font-weight: 600;
+  }
+  .ham__helpLine--a {
+    top: 0;
     left: 0;
+    margin: 0 2vw;
   }
   /* Hamburger ends */
-
   .smallNav {
     display: none;
   }
