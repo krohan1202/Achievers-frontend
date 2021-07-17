@@ -60,6 +60,9 @@
   font-weight: 700;
   font-size: 1.21vw;
 }
+.navAdminSmallNav--ul {
+  display: none;
+}
 .menu {
   display: none;
 }
@@ -325,6 +328,31 @@
   }
   .nav__logout,
   .nav__orderHistory {
+    display: none;
+  }
+  .navAdminSmallNav--ul {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 10vw;
+    top: 0;
+    background-color: #0b1d3e;
+  }
+  .navAdminSmallNav__createProduct,
+  .navAdminSmallNav__category {
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 4.31vw;
+  }
+  .nav__createProduct,
+  .nav__category {
     display: none;
   }
 }

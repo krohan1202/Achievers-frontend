@@ -1549,4 +1549,49 @@
   .ach__topperFavPic {
     top: 0;
   }
+
+  /* <---------------Delete------------------> */
+  /* ----------- Product Item ----------------- */
+  @import url("../utils/productItem/productItem.css");
+
+  .delete-all,
+  .delete-all--popularEntranceCourses,
+  .courses__delete-all {
+    position: relative;
+    text-align: right;
+    margin-top: 3.85vw;
+    margin-bottom: 3vw;
+    top: 252vw;
+    left: 50%;
+    transform: translateX(-55%);
+    width: 70vw;
+  }
+  .delete-all--popularEntranceCourses {
+    top: 0;
+  }
+  .delete-all input,
+  .delete-all--popularEntranceCourses input,
+  .courses__delete-all input {
+    height: 25px;
+    width: 25px;
+    transform: translateY(5px);
+    margin: 0 15px;
+  }
+  .delete-all span,
+  .delete-all--popularEntranceCourses span,
+  .courses__delete-all span {
+    text-transform: uppercase;
+    color: #03a5ce;
+    letter-spacing: 1.3px;
+  }
+  .delete-all button,
+  .delete-all--popularEntranceCourses button,
+  .courses__delete-all button {
+    border: 1px solid crimson;
+    height: 11.25vw;
+    padding: 2.52vw 3.2vw;
+    color: crimson;
+    font-size: 4.5vw;
+    text-transform: uppercase;
+  }
 }

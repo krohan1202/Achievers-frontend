@@ -32,6 +32,15 @@ function Header() {
         )
     }
 
+    const adminMobileSmallNavRouter = () =>{
+        return(
+            <ul className="navAdminSmallNav--ul">
+                <li><Link className="navAdminSmallNav__createProduct" to="/create_product">Create Product</Link></li>
+                <li><Link className="navAdminSmallNav__category" to="/category">Categories</Link></li>
+            </ul>
+        )
+    }
+
     const loggedRouter = () =>{
         return(
             <>
@@ -110,6 +119,9 @@ function Header() {
             <li className="nav__smallNav--li"><a className="nav__smallNav" href="/careers">Careers</a></li>
             <li className="nav__smallNav--li"><a className="nav__smallNav" href="/about#ach__about__contactUs">Contact Us</a></li>
             <li className="nav__smallNav--li"><a className="nav__smallNav" href="/">LIVE Enquiry Desk</a></li>
+        </ul>
+        <ul>
+            {isAdmin && adminMobileSmallNavRouter()}
         </ul>
         <div className="menu-wrap">
                     <input type="checkbox" className="toggler" />
