@@ -151,7 +151,7 @@ function OurCourses() {
                     <span className="courses__filters--categoryRow">
                         <span>Filters: </span>
                         <select className="courses__filters--categoryRow--dropdown" name="category" value={category} onChange={handleCategory} >
-                            <option value=''>All Products</option>
+                            <option className="courses__filters--categoryRow--dropdown--AllProds" value=''>All Products</option>
                             {
                                 categories.map(category => (
                                     <option value={"category=" + category._id} key={category._id}>
