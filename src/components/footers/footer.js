@@ -12,7 +12,7 @@ function Footer() {
                 <li className="ach__footer--aboutPart--li"><a className="ach__footer--aboutPart--links" href="/about#ach__about__contactUs">Contact Us</a></li>
                 <li className="ach__footer--aboutPart--li"><a className="ach__footer--aboutPart--links" href="/about">About Us</a></li>
                 <li className="ach__footer--aboutPart--li"><a className="ach__footer--aboutPart--links" href="/careers">Careers</a></li>
-                <li className="ach__footer--aboutPart--li"><a className="ach__footer--aboutPart--links" href="/stories">Achiever Stories</a></li>
+                <li className="ach__footer--aboutPart--li"><a className="ach__footer--aboutPart--links" href="/stories">Achievers Stories</a></li>
                 <li className="ach__footer--aboutPart--li"><a className="ach__footer--aboutPart--links" href="/press">Press</a></li>
                 </ul>
             </span>
