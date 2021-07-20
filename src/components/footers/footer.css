@@ -123,7 +123,7 @@
 /* <----------------------------Responsive---------------------------------> */
 @media (max-width: 768px) {
   .ach__footer {
-    height: 160vw;
+    height: 169vw;
   }
   .ach__footer--ul {
     width: 31.5vw;
@@ -167,7 +167,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 99.5vw;
+    top: 103.5vw;
     width: 89vw;
     height: 0;
     border: none;
@@ -175,7 +175,7 @@
   }
   .ach__footer--horizontalLine {
     position: relative;
-    top: 5vw;
+    top: 0;
     width: 89vw;
     border: none;
     border-bottom: 2.8px solid #565656;
@@ -186,7 +186,7 @@
     position: absolute;
     top: 9.7vw;
     left: 41.9vw;
-    height: 32vw;
+    height: 32.5vw;
   }
   .ach__footer--map {
     position: absolute;
@@ -211,7 +211,7 @@
     width: 52vw;
     font-size: 3vw;
     margin: 1.8vw 0;
-    line-height: 15.5px;
+    line-height: 4.5vw;
   }
   .ach__footer--logo {
     position: relative;
@@ -257,9 +257,9 @@
 
 @media (max-width: 360px) {
   .ach__footer--verticalLine {
-    top: 103.5vw;
+    top: 109vw;
   }
   .ach__footer--horizontalLine {
-    top: 1vw;
+    top: -4vw;
   }
 }

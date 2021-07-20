@@ -1144,8 +1144,10 @@
   font-weight: 700;
   font-size: 1.1vw;
   border-radius: 25px;
-  /* top: 2vw; */
-  bottom: 0vw;
+  top: 2vw;
+}
+.careers__jobCards--mobile {
+  display: none;
 }
 .careers__jobCards--RightSide {
   width: 45vw;
@@ -2158,11 +2160,12 @@
     text-align: center;
   }
   .careers__jobCards {
-    width: 88vw;
+    width: 84vw;
+    margin-bottom: 5vw;
   }
   .careers__jobCards--leftSide {
-    height: 48vw;
-    width: 88vw;
+    height: 92vw;
+    width: 84vw;
   }
   .careers__jobCards--jobTitle,
   .careers__jobCards--jobHighlightsHeading,
@@ -2171,7 +2174,7 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 4.85vw;
-    width: 88vw;
+    width: 84vw;
     color: #004aad;
   }
   .careers__jobCards--jobHighlightsHeading {
@@ -2183,6 +2186,10 @@
     font-weight: 600;
     margin-top: 1.4vw;
   }
+  .careers__jobCards--mobile {
+    display: block;
+    margin-top: 2vw;
+  }
   .careers__jobCards--applyBtn {
     position: relative;
     color: #000;
@@ -2190,20 +2197,17 @@
     background-color: #ffdb0e;
     font-size: 4.1vw;
     border-radius: 25px;
-    bottom: 0vw;
+    top: 6vw;
   }
   .careers__jobCards--RightSide {
-    width: 88vw;
-    position: relative;
-    top: -21.5vw;
-    left: 0;
+    display: none;
   }
   .careers__jobCards--jobDescription,
   .careers__jobCards--rolesAndResponsibilitiesHeading,
   .careers__jobCards-bulletPoints {
     position: relative;
     font-size: 4.2vw;
-    width: 88vw;
+    width: 84vw;
   }
   .careers__jobCards--rolesAndResponsibilitiesHeading {
     font-size: 4vw;
@@ -2213,6 +2217,6 @@
     position: relative;
     font-size: 3.93vw;
     margin: 0.4vw 0;
-    width: 88vw;
+    width: 84vw;
   }
 }

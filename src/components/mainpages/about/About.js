@@ -35,7 +35,7 @@ export default function About() {
 
             <h3 className="ach__about--subHeading--corporateEstablishment">Corporate Establishment as a Private Limited Company</h3>
             <p className="ach__about--aboutAch--p">Since 1999, Achievers has been operating as a student-serving institution. It began operations in Jadavpur, Kolkata, with just one faculty member, Dr. Sujoy Roy Chowdhury (SRC), and three students in its first batch.</p>
-            <p className="ach__about--aboutAch--p">It continued on its way, and year after year, more and more excellent teachers began to join us. We soon climbed to the pinnacle of our field of higher education. Today, we have approximately 3000 students (more than most large schools/colleges in Kolkata and related institutes).</p>
+            <p className="ach__about--aboutAch--p ach__about--aboutAch--p2">It continued on its way, and year after year, more and more excellent teachers began to join us. We soon climbed to the pinnacle of our field of higher education. Today, we have approximately 3000 students (more than most large schools/colleges in Kolkata and related institutes).</p>
             <p className="ach__about--aboutAch--p">We decided to incorporate this as a private limited company in 2013, giving it a new name, and in 2014 we established: Achievers Circle Private Limited (ACPL) under the Companies Act, 1956 (No.1 of 1956), Government of West Bengal, India, and our corporate identity number is U80901WB2014PTC201663.</p>
 
             <h3 className="ach__about--subHeading--achSoFar">Achievements so far</h3>
@@ -249,7 +249,6 @@ export default function About() {
 
                     {/* Executive Officers */}
                     <div className="ach__about__ourTeam--academicCoordinators">
-                        {/* <p className="careers__ourTeam--academicCoordinatorsHeading">EXECUTIVE OFFICERS</p> */}
                         <div className="ach__about__ourTeam--academicCoordinatorsCard">
                             <img className="ach__about__ourTeam--academicCoordinatorsCardImg" src={ExecutiveOfficer1} alt="Executive Officers"/>
                             <span className="ach__about__ourTeam--academicCoordinatorsCardName">Mr. Amir Hossai Molla</span>
