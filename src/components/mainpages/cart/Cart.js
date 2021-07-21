@@ -130,24 +130,23 @@ function Cart() {
             return (
                 <>
                 <Header />
-                <h2 style={{textAlign: "center", fontSize: "5rem", margin: "5.5vw auto"}}>Cart Empty</h2>
+                <h2 className="cart--empty">Cart Empty</h2>
                 <Footer />
                 </>
             )}
-
+        
     return (
         <div>
            <Header />
+           <div className="cartProd">
             {
                 cart.map(product => (
-                    <div className="detail cart" key={product._id}>
+                    <div className="detail cart cartProd--mobile" key={product._id}>
                         <img src={product.images.url} alt="" />
 
                         <div className="box-detail">
                             <h2>{product.title}</h2>
-
                             <h3>Rs. {(product.price * product.quantity).toFixed(2)}</h3>
-                            <p>{product.description}</p>
                             <p>{product.content}</p>
 
                             <div className="amount">
@@ -176,6 +175,7 @@ function Cart() {
 				>
 					Proceed to Buy
 				</button>
+            </div>
             </div>
             <Footer />
         </div>

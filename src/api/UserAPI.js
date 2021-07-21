@@ -14,7 +14,7 @@ function UserAPI(token) {
                     const res = await axios.get('https://achievers-backend.herokuapp.com/user/infor', {
                         headers: {Authorization: token}
                     })
-
+                    console.log(res);
                     setIsLogged(true)
                     res.data.role === 1 ? setIsAdmin(true) : setIsAdmin(false)
 
