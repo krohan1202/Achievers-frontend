@@ -67,3 +67,19 @@ button {
 @import url("./components/mainpages/createProduct/createProduct.css");
 
 /* ----------------- Responsive ------------------ */
+/* ----------------- Responsive ------------------ */
+@media (max-width: 720px) {
+  .App {
+    display: none;
+  }
+  #responsive--heading {
+    display: inline;
+    position: absolute;
+    text-align: center;
+    font-size: 6vw;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
