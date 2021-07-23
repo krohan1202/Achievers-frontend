@@ -1,4 +1,5 @@
 import React, {useContext, useState} from 'react';
+import { Player } from 'video-react';
 import {GlobalState} from '../../../GlobalState';
 import Carousel from "react-elastic-carousel";
 import ProductItem from '../utils/productItem/ProductItem';
@@ -111,8 +112,9 @@ function Products() {
     return (
         <>
         <Header />
-        <img src={HeroVid} alt="Hero Banner" className="hero__vid" />
-        
+        <video autoPlay loop muted className="hero__vid">
+            <source src={"https://res.cloudinary.com/achievers-cloud/video/upload/v1627015069/test/HeroVid_bjawe3.mp4"} type="video/mp4" alt="Hero Banner"/>
+        </video>
         <span className="hero__card1">
             <p className="hero__card1--heading">ACHIEVERS SCHOOL PROGRAM</p>
             <hr className="hero__card1--underline"></hr>
@@ -186,7 +188,7 @@ function Products() {
                         ? <ProductItem key={product._id} product={product} isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} /> 
                         : null
                 })
-                : <p className="ach__cat--noProducts">Stay tuned! More courses coming soon...</p>
+                : <p className="ach__cat--noProducts">Stay tuned! More study materials coming soon...</p>
             }
             </Carousel>
         </div>
@@ -194,7 +196,7 @@ function Products() {
         {products.length === 0 && <Loading />}
         
         <div className="ach__allIndiaPart">
-            <div className="ach__allIndiaVid"></div>
+            <iframe className="ach__allIndiaVid" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FAchieversCirclePrivateLimited%2Fvideos%2F1415833671799794%2F&show_text=false&width=560&t=0" scrolling="no" frameborder="0" allowfullscreen="true" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
             <div className="ach__allIndiaEntranceTest">
                 <p className="ach__allIndiaEntranceTest--heading">ACHIEVERS ALL INDIA ENTRANCE TEST SERIES</p>
                 <hr className="ach__allIndiaEntranceTest--underline"></hr>
@@ -265,10 +267,8 @@ function Products() {
             <hr className="ach__popularEntranceCourses--underline"></hr>
             <a className="ach__popularEntranceCourses--viewAllBtn" href="https://achieverscircle.ml/entrance">VIEW ALL</a>
 
-            <p className="ach__popularEntranceCourses--description">Achievers provides comprehensive test preparatory services for students preparing for medical, engineering and various All-India entrance
-                examinations for Class 11, 12 as well as college students. We provide our services through classroom-based coaching and digital and distance
-                learning, which supplement our classroom courses and allow students to engage in self-paced learning, which supplement our classroom courses and
-                allow students in self-paced learning. We also offer short-term classroom courses to prepare students for their upcoming examinations.
+            <p className="ach__popularEntranceCourses--description">
+            Achievers provides comprehensive test preparatory services for students preparing for medical, engineering and various All-India entrance examinations for Class 11, 12 as well as college students.
             </p>
 
             {
@@ -297,7 +297,10 @@ function Products() {
 
         {products.length === 0 && <Loading />}
 
-        <img className="ach__popularEntranceCourses--vid" src={PopularEntranceCoursesVid} alt="Popular Entrance Courses"/>
+        {/* <img className="ach__popularEntranceCourses--vid" src={PopularEntranceCoursesVid} alt="Popular Entrance Courses"/> */}
+        <video autoPlay loop muted className="ach__popularEntranceCourses--vid">
+            <source src={"https://res.cloudinary.com/achievers-cloud/video/upload/v1627028321/test/BottomHomeVid_y42lij.mp4"} type="video/mp4" alt="Hero Banner"/>
+        </video>
         </div>
 
         {/* Achievers Hall of Fame */}

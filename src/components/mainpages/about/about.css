@@ -283,6 +283,9 @@
   color: #f92b32;
   width: 77vw;
 }
+.policy__banner {
+  width: 100%;
+}
 
 /* <==================================================================> */
 /* <============================Responsive============================> */
@@ -538,5 +541,14 @@
     text-align: center;
     color: #f92b32;
     width: 77vw;
+  }
+  .policy__banner {
+    position: relative;
+    width: 150vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .policy__banner--privacy {
+    width: 130vw;
   }
 }

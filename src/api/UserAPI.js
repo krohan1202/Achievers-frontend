@@ -21,7 +21,7 @@ function UserAPI(token) {
                     setCart(res.data.cart)
 
                 } catch (err) {
-                    alert(err.response.data.msg)
+                    console.log(err.response.data.msg);
                 }
             }
 
