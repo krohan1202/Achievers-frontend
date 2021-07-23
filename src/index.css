@@ -68,7 +68,7 @@ button {
 
 /* ----------------- Responsive ------------------ */
 /* ----------------- Responsive ------------------ */
-@media (max-width: 720px) {
+/* @media (max-width: 720px) {
   .App {
     display: none;
   }
@@ -82,4 +82,4 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-}
+} */

@@ -80,6 +80,13 @@ function Footer() {
             </a>
             </span>
             
+            <span>
+            <p className="ach__success--helpLine">Help Line: 9007871854 / 9830668808 / 86970 38764 / 7384905704 </p>
+        </span>
+
+        <span>
+            <p className="ach__success--email">Email: drsrcphd@gmail.com</p>
+        </span>
         </div>
     )
 }

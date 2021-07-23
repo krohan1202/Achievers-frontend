@@ -123,7 +123,7 @@
 /* <----------------------------Responsive---------------------------------> */
 @media (max-width: 768px) {
   .ach__footer {
-    height: 169vw;
+    height: 196vw;
   }
   .ach__footer--ul {
     width: 31.5vw;
@@ -215,8 +215,8 @@
   }
   .ach__footer--logo {
     position: relative;
-    width: 59vw;
-    top: 87.8vw;
+    width: 65vw;
+    top: 92.8vw;
     left: 5.3vw;
   }
   /* Social */

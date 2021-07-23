@@ -1,5 +1,4 @@
 import React, {useContext, useState} from 'react';
-import { Player } from 'video-react';
 import {GlobalState} from '../../../GlobalState';
 import Carousel from "react-elastic-carousel";
 import ProductItem from '../utils/productItem/ProductItem';
@@ -9,10 +8,8 @@ import Header from "../../headers/Header";
 import Footer from "../../footers/footer";
 
 //Assets
-import HeroVid from "../../../assets/Pics/Home/2-Hero/Video Part.png";
 import StudyMatStarredTexts from "../../../assets/Pics/Home/3-Study Materials/Starred Texts.png";
 import StudyMatStarredTextsMobile from "../../../assets/Pics/Home/3-Study Materials/Starred Texts--mobile.png";
-import PopularEntranceCoursesVid from "../../../assets/Pics/Home/5-Popular Entrance Courses/Video Part.png";
 import WhyAchStarredTexts from "../../../assets/Pics/Home/6-Why Achievers/Starred Texts.png";
 import WhyAchStarredTextsMobile from "../../../assets/Pics/Home/6-Why Achievers/Starred Texts--mobile.png";
 import TopperMoreInfo from "../../../assets/Pics/Home/7-Topper Fav/Topper & More info.png";
@@ -196,7 +193,7 @@ function Products() {
         {products.length === 0 && <Loading />}
         
         <div className="ach__allIndiaPart">
-            <iframe className="ach__allIndiaVid" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FAchieversCirclePrivateLimited%2Fvideos%2F1415833671799794%2F&show_text=false&width=560&t=0" scrolling="no" frameborder="0" allowfullscreen="true" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            <iframe className="ach__allIndiaVid" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FAchieversCirclePrivateLimited%2Fvideos%2F1415833671799794%2F&show_text=false&width=560&t=0" scrolling="no" frameBorder="0" allowFullScreen={true} allow="clipboard-write; encrypted-media; picture-in-picture; web-share" title="Nikita Chirpal Interview"></iframe>
             <div className="ach__allIndiaEntranceTest">
                 <p className="ach__allIndiaEntranceTest--heading">ACHIEVERS ALL INDIA ENTRANCE TEST SERIES</p>
                 <hr className="ach__allIndiaEntranceTest--underline"></hr>
