@@ -25,6 +25,7 @@ function JobCards(props) {
             <p className="careers__jobCards--rolesAndResponsibilitiesHeading">Roles And Responsibilities</p>
             {rolesAndResponsibilities}
           </div>
+          <a href={props.link} className="careers__jobCards--applyBtn--mobile">Apply Now</a>
          
       </div>
     );

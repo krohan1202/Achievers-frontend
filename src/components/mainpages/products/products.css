@@ -1118,9 +1118,9 @@
   left: 50%;
   transform: translateX(-50%);
   width: 84vw;
+  margin-bottom: 3vw;
 }
 .careers__jobCards--leftSide {
-  height: 16vw;
   width: 25vw;
 }
 .careers__jobCards--jobTitle,
@@ -1144,6 +1144,8 @@
 }
 .careers__jobCards--applyBtn {
   position: relative;
+  display: block;
+  width: 11vw;
   color: #000;
   padding: 0.75vw 2vw;
   background-color: #ffdb0e;
@@ -1152,8 +1154,10 @@
   font-size: 1.1vw;
   border-radius: 25px;
   top: 2vw;
+  margin-bottom: 3vw;
 }
-.careers__jobCards--mobile {
+.careers__jobCards--mobile,
+.careers__jobCards--applyBtn--mobile {
   display: none;
 }
 .careers__jobCards--RightSide {
@@ -1373,7 +1377,7 @@
   }
   .ach__allIndiaEntranceTest {
     margin-left: 0;
-    height: 73.57vw;
+    height: 75.7vw;
     width: 100%;
   }
   .ach__allIndiaEntranceTest--heading,
@@ -1446,7 +1450,7 @@
   }
   .ach__popularEntranceCourses--viewAllBtn {
     background-color: #fc2b32;
-    top: 30.5vw;
+    top: 33vw;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -2178,13 +2182,15 @@
     margin-bottom: 5vw;
   }
   .careers__jobCards--leftSide {
-    height: 92vw;
+    /* height: 92vw; */
     width: 84vw;
   }
   .careers__jobCards--jobTitle,
   .careers__jobCards--jobHighlightsHeading,
   .careers__jobCards--jobRequirements {
     position: relative;
+    display: block;
+    margin: 3vw 0;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 4.85vw;
@@ -2205,13 +2211,21 @@
     margin-top: 2vw;
   }
   .careers__jobCards--applyBtn {
+    display: none;
+  }
+  .careers__jobCards--applyBtn--mobile {
     position: relative;
+    display: block;
+    width: 39vw;
     color: #000;
     padding: 2.75vw 7vw;
     background-color: #ffdb0e;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
     font-size: 4.1vw;
     border-radius: 25px;
-    top: 6vw;
+    top: 2vw;
+    margin: 1vw 0 3vw;
   }
   .careers__jobCards--RightSide {
     display: none;
@@ -2232,5 +2246,14 @@
     font-size: 3.93vw;
     margin: 0.4vw 0;
     width: 84vw;
+  }
+}
+
+@media (max-width: 360px) {
+  .ach__popularEntranceCourses--viewAllBtn {
+    top: 30.5vw;
+  }
+  .ach__allIndiaEntranceTest {
+    height: 73.57vw;
   }
 }

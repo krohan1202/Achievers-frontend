@@ -328,18 +328,17 @@
     line-height: 30px;
     margin-top: 2vw;
   }
-  .ach__about--aboutAch--p2 {
-    margin-top: 63vw;
-  }
   .ach__about--aboutAch--pLeft {
     width: 84vw;
     font-weight: 400;
   }
   .ach__about--study1 {
-    position: absolute;
+    position: relative;
+    display: block;
     left: 0vw;
     width: 84vw;
-    top: 75vw;
+    top: 0vw;
+    margin: 4vw 0;
   }
   .ach__about--study2,
   .ach__about--study3,
