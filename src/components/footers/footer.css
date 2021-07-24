@@ -119,6 +119,9 @@
 .ach__footer--social--icons-telegram {
   width: 2vw;
 }
+.ach__footer--contact {
+  display: none;
+}
 
 /* <----------------------------Responsive---------------------------------> */
 @media (max-width: 768px) {
@@ -252,6 +255,9 @@
   }
   .ach__footer--social--icons-telegram {
     width: 7.7vw;
+  }
+  .ach__footer--contact {
+    display: block;
   }
 }
 
