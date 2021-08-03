@@ -294,7 +294,6 @@ function Products() {
 
         {products.length === 0 && <Loading />}
 
-        {/* <img className="ach__popularEntranceCourses--vid" src={PopularEntranceCoursesVid} alt="Popular Entrance Courses"/> */}
         <video autoPlay loop muted className="ach__popularEntranceCourses--vid">
             <source src={"https://res.cloudinary.com/achievers-cloud/video/upload/v1627028321/test/BottomHomeVid_y42lij.mp4"} type="video/mp4" alt="Hero Banner"/>
         </video>
